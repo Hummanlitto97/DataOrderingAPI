@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DataOrdering.API.Controllers
 {
     [ApiController]
-    [Route("test/t")]
+    [Route("")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
