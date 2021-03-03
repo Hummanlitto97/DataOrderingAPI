@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataOrdering.API", "DataOrdering.API\DataOrdering.API.csproj", "{8DBCF5F1-2BBF-4975-8040-B814E37B1BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataOrdering.App", "DataOrdering.App\DataOrdering.App.csproj", "{F39848F7-E4BC-4879-B761-C2074D6716B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DBCF5F1-2BBF-4975-8040-B814E37B1BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBCF5F1-2BBF-4975-8040-B814E37B1BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBCF5F1-2BBF-4975-8040-B814E37B1BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBCF5F1-2BBF-4975-8040-B814E37B1BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39848F7-E4BC-4879-B761-C2074D6716B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39848F7-E4BC-4879-B761-C2074D6716B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39848F7-E4BC-4879-B761-C2074D6716B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39848F7-E4BC-4879-B761-C2074D6716B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5779EA4C-BA61-4840-91B4-72990F842587}
+	EndGlobalSection
+EndGlobal

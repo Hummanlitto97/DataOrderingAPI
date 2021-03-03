@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HB4d/F1ZtwCLDQ/tK/DYjEqPAUrr7gKl8n81R5GvUSiXbxKCQo8uvTzbEzwjsOTizH/fXGmbIE8ynNpp5t32+Q==",
+  "success": true,
+  "projectFilePath": "G:\\Programming\\C#\\ASP.NET\\OLDDataOrdering\\DataOrdering.Domain\\DataOrdering.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
