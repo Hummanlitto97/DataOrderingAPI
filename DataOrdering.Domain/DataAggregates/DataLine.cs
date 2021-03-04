@@ -1,26 +1,30 @@
 ﻿using System;
-using System.Linq;
 using DataOrdering.Domain.Common;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DataOrdering.Domain.DataAggregates
 {
-    class DataLine<data> where data: IComparable, IConvertible
+    public class DataLine<data> where data: IComparable, IConvertible
     {
-        data[] DataUnits;
+        public data[] DataUnits { get; private set; }
         public DataLine()
         {
-            DataUnits = new data[0];
+            DataUnits = Array.Empty<data>();
         }
         public DataLine(string data)
         {
-            string[] splittedData = data.Split(' ');
-            DataUnits = Array.ConvertAll(splittedData, unit => (data)Convert.ChangeType(unit,typeof(data)));
+            string[] splittedData = data.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            if (splittedData.Length != 0)
+            {
+                DataUnits = Array.ConvertAll(splittedData, unit => (data)Convert.ChangeType(unit, typeof(data)));
+            }
+            else
+            {
+                DataUnits = Array.Empty<data>();
+            }
         }
-        public string Get_Sorted_Data()
-        { 
-            return string.Join(" ", Array.ConvertAll(Sorting.BubbleSort(DataUnits),unit => unit.ToString()));
+        public string[] Get_Sorted_Data()
+        {
+            return Array.ConvertAll(Sorting.BubbleSort(DataUnits), unit => unit.ToString());
         }
     }
 }

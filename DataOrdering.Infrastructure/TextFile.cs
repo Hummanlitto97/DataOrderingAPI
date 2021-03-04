@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 
+
 namespace DataOrdering.Infrastructure
 {
     public class TextFile : IDatabase
@@ -17,7 +18,9 @@ namespace DataOrdering.Infrastructure
         }
         public string Save_Data(string data)
         {
-            File.CreateText(data).Write(data);
+            StreamWriter writer = File.CreateText(Path);
+            writer.Write(data);
+            writer.Close();
             return data;
         }
         public string Load_Data()
